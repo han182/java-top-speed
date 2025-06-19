@@ -18,13 +18,13 @@ public class Java04_Operator {
 
         // 2.一元运算符：1个元素参与运算的运算符 ++(自增运算符+1)  --
         int i = 0;
-//        int j = i;
-//        i = i + 1;
-        int j = i++;
-        int h = ++i;
+//        int j = i; j=0
+//        i = i + 1; i=1
+//        int j = i++; // j=0 i=1
+        int j = ++i; // j=1 i=1
         System.out.println("i = " + i);
         System.out.println("j = " + j);
-        System.out.println("h = " + h);
+
 
     }
 }
