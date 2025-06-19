@@ -1,0 +1,175 @@
+# 代码运行机制
+![alt text](image-33.png)
+![alt text](image.png)
+
+# 代码解析
+- 单行注释//
+- 多行注释 /**/
+- TODO 对注释进行标记,标记后会变色
+- main 为程序的入口，固定写法： 
+`public static void main(String[] args) {}`
+
+- 双引号为引用，双引号里的内容是字符串
+- ctrl + D 复制当前行
+- ctrl + R 替换
+
+# 基础语法 变量 Variable
+![alt text](image-1.png)
+```
+package chapter02;
+public class Java01_Variable {
+    public static void main(String[] args) {
+        // TODO 变量，其实就是可以改变的向量存储
+        // 变量声明: 数据类型 变量名称
+        String name;
+        // 变量赋值
+        name = "hs";
+        // 变量使用
+        System.out.println(name);
+        // 声明和赋值可以写在一起
+        String name2 = "hs1";
+        System.out.println(name2);
+
+        //在使用变量之前，必须给变量赋值。这个操作叫变量的初始化
+    }
+}
+```
+
+# 基础语法 标识符 Identifier
+```
+package chapter02;
+
+public class Java02_Identifier {
+    public static void main(String[] args) {
+        // TODO 标识符： 标识数据的符号
+        // 变量名称name就是标识符，主要用于起名
+        String name = "hs1";
+        // TODO 标识符命名规则
+        // 1.英文字母
+        //wx,qq
+        String username = "hs2";
+        String xingming = "hs3";
+        // 2.符号，只能用$和_其他符号属于特殊符号不能用
+        // 3.数字，0-9可以作为标识符使用，但是不能作为
+        // 4.标识符不能重复，区分大小写
+        // 5.Java预先定义好了一些标识符名称，叫做关键字或保留字，不能用
+        // 6.驼峰命名法 userName
+        // 7.标识符长度没有长度闲置
+    }
+}
+
+```
+# 基础语法 数据类型 Datatype
+![alt text](image-2.png)
+```
+package chapter02;
+
+public class Java03_Datatype {
+    public static void main(String[] args) {
+
+        String name = "hs1";
+        // TODO 数据得存储单位
+        // 1.比特(bit位):数据运算得最小存储单位。
+        // 2.字节(byte):数据得最小存单位。
+        // 字节和比特之间可以互相转换得
+        // 1byte = 8bit
+        // KB, MB, GB, TB....PB, EB
+        // 1024 Byte => 1KB
+        // 1024KB =>1MB
+        // 1024 MB =>1GB
+        // 1024 GB => 1TB
+
+        //Java的数据类型可以确定数据范围
+
+    }
+}
+
+
+```
+## 基础数据类型
+```
+package chapter02;
+
+public class Java03_Datatype_1 {
+    public static void main(String[] args) {
+
+        // TODO 基本数据类型
+        // TODO 1. 整数类型
+        // byte: 8位
+        byte b = 10;
+        // short: 16位
+        short s = 10;
+        // int : 32位
+        int i = 10;
+        // Long: 64位
+        long lon = 10;
+
+        // TODO 2.浮点类型:含有小数点得数据类型
+        // 根据计算精度分为
+        // float: 单精度浮点类型
+        // 默认情况下，小数点得数据会被识别位精度较高得双精度double类型
+        // float: 单精度浮点类型，数据需要使用F(f)结尾
+        float f = 1.0f;
+        //double： 双精度浮点类型
+        double d = 2.0;
+
+        // TODO 3.字符类型:就是使用符号标识文字内容
+        char c ='@';
+        
+        // TODO 布尔类型 true false
+        boolean bool = true;
+
+    }
+
+}
+
+
+```
+## 数据类型的转换
+```
+package chapter02;
+
+public class Java03_Datatype_2 {
+    public static void main(String[] args) {
+        // TODO 数据类型的转换
+        String name = "zhangsan";
+        int Lage = 30;
+
+        name = "hs";
+        // name =age;
+        // byte -> short-> int-> long-> floot-> double
+
+        byte b = 10;
+        short s = b;
+        int i = s;
+        long l = i;
+        float f = l;
+        double d = f;
+        // 范围小的数据可以直接转换成范围大的数据，范围大的数据不能转换为范围小的数据
+        int i1 = (int)d;  //强制转换
+
+
+    }
+
+}
+```
+## 引用数据类型
+```
+package chapter02;
+
+public class Java03_Datatype_3 {
+    public static void main(String[] args) {
+        // TODO 引用数据类型：可以被引用的数据类型
+        String str1 = "abc";
+
+    }
+
+}
+
+```
+# 运算符 Operator
+![alt text](image-3.png)
+
+
+
+
